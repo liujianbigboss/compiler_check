@@ -28,7 +28,7 @@ public class NameCheckProcessor extends AbstractProcessor {
     @Override
     public synchronized void init(ProcessingEnvironment processingEnv) {
         super.init(processingEnv);
-        nameChecker = new NameChecker();
+        nameChecker = new NameChecker(processingEnv);
     }
 
     /**
